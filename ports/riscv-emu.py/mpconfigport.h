@@ -3,7 +3,7 @@
 // options to control how MicroPython is built
 
 // Use the minimal starting configuration (disables all optional features).
-#define MICROPY_CONFIG_ROM_LEVEL (MICROPY_CONFIG_ROM_LEVEL_MINIMUM)
+#define MICROPY_CONFIG_ROM_LEVEL (MICROPY_CONFIG_ROM_LEVEL_EXTRA_FEATURES)
 
 // You can disable the built-in MicroPython compiler by setting the following
 // config option to 0.  If you do this then you won't get a REPL prompt, but you
@@ -38,6 +38,7 @@
 #define MICROPY_PY_ERRNO                  (1)
 #define MICROPY_PY_BINASCII               (1)
 #define MICROPY_PY_RE                     (1)
+#define MICROPY_PY_UCTYPES                (0)
 
 #define MICROPY_PY_SYS                    (1)
 #define MICROPY_PY_SYS_MODULES            (1)
@@ -45,6 +46,10 @@
 #define MICROPY_PY_SYS_STDIO              (1)
 #define MICROPY_PY_SYS_EXC_INFO           (1)
 #define MICROPY_PY_SYS_IMPL               (1)
+
+#define MICROPY_PY_BUILTINS_SLICE         (1)
+#define MICROPY_PY_BUILTINS_STR_UNICODE   (1)
+#define MICROPY_PY_ALL_FEATURES           (1)
 
 #define MICROPY_ALLOC_PATH_MAX            (256)
 
