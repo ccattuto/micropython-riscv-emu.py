@@ -46,6 +46,7 @@
 #define MICROPY_PY_SYS_STDIO              (1)
 #define MICROPY_PY_SYS_EXC_INFO           (1)
 #define MICROPY_PY_SYS_IMPL               (1)
+#define MICROPY_PY_SYS_ARGV               (1)
 
 #define MICROPY_PY_BUILTINS_SLICE         (1)
 #define MICROPY_PY_BUILTINS_STR_UNICODE   (1)
